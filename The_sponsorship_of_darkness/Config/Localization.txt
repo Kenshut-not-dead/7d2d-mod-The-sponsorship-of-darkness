@@ -1,0 +1,5 @@
+Key,english,russian
+Ночь,"The sponsorship of darkness","Покровительство тьмы"
+Ночь_вознаграждает_всплывающие_окно,"The sponsorship of darkness","Покровительство тьмы"
+описание_Ночь_вознаграждает,"The nights are dangerous tonight, but the darkness itself wants to help you. Take risks at night, go out on sorties, destroy zombies and then the darkness will reward you.","Нынче ночи опасны, но сама тьма хочет вам помочь. Рискуйте ночью, совершайте вылазки, уничтожайте зомби, и тогда тьма вознаградит вас."
+

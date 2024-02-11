@@ -1,0 +1,43 @@
+<configs>
+	
+<append xpath="/buffs">	
+	
+	<buff name="Ночь_вознаграждает" name_key="Ночь" description_key="описание_Ночь_вознаграждает" tooltip_key="Ночь_вознаграждает_всплывающие_окно" icon="ui_game_symbol_death" icon_color="30, 242, 27" icon_blink="true">
+	<stack_type value="ignore"/>
+		<effect_group>
+			<requirement name="IsNight" />		
+			<passive_effect name="LootStage" operation="perc_add" value=".1"/>	
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".2" />
+		</effect_group>
+	</buff>
+	
+	
+
+	<buff name="начало_ночи" hidden="true">
+		<stack_type value="ignore"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<requirement name="IsNight"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="Ночь_вознаграждает"/>
+		</effect_group>
+	</buff>
+
+		
+	<buff name="начало_дня"  hidden="true">
+		<stack_type value="ignore"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<requirement name="IsDay"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="Ночь_вознаграждает"/>
+		</effect_group>
+	</buff>
+
+			
+	
+	
+	
+
+		
+</append>
+	
+</configs>
